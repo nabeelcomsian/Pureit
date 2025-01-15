@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "353154531379",
+    "project_id": "pureit-ed7e1",
+    "storage_bucket": "pureit-ed7e1.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:353154531379:android:9d0b96098b54046ea82346",
+        "android_client_info": {
+          "package_name": "com.example.pureit"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8fBC9Rndvui9A2KZjPS8Xw_kT8hShrcU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
