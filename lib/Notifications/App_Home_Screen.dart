@@ -13,7 +13,12 @@ class _AppHomeScreenState extends State<AppHomeScreen> {
   @override
   initState() {
     super.initState();
+    notificationServices.firebaeInit();
     notificationServices.requestNotificationPermission();
+    notificationServices.getToken().then((value) {
+      debugPrint("Device Token");
+      debugPrint(value);
+    });
   }
 
   @override

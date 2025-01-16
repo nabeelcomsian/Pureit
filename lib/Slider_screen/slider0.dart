@@ -20,7 +20,7 @@ class Slider0 extends StatelessWidget {
               ),
             ),
             Positioned(
-              top: 0,
+              top: 0.0,
               child: Padding(
                 padding: EdgeInsets.symmetric(
                     horizontal: MediaQuery.sizeOf(context).width / 2 - 233 / 2,

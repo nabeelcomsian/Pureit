@@ -80,7 +80,7 @@ class _LoginScreenState extends State<LoginScreen> {
             const TopContainer(),
             Expanded(
               child: Padding(
-                padding: const EdgeInsets.fromLTRB(25, 80, 15, 0),
+                padding: const EdgeInsets.fromLTRB(25, 80, 15, 0.0),
                 child: SingleChildScrollView(
                   child: SizedBox(
                     width: 350,
