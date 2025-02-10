@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:pureit/Slider_screen/Slider2.dart';
-import 'package:pureit/Slider_screen/Slider_1.dart';
-import 'package:pureit/Slider_screen/slider0.dart';
-import 'package:pureit/Slider_screen/welcome_screen.dart';
+import 'package:pureit/view/screens/Slider_screen/Slider2.dart';
+import 'package:pureit/view/screens/Slider_screen/Slider_1.dart';
+import 'package:pureit/view/screens/Slider_screen/slider0.dart';
+import 'package:pureit/view/screens/Slider_screen/welcome_screen.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 
 class SliderHomeScreen extends StatelessWidget {

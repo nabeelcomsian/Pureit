@@ -1,7 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:pureit/Notifications/App_Home_Screen.dart';
+import 'package:pureit/view/screens/App_Home_Screen.dart';
 import 'package:pureit/utils/utils.dart';
 import 'package:pureit/view/Component/Bottom_Wave.dart';
 import 'package:pureit/view/Component/CustomTextField.dart';

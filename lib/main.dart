@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:pureit/Notifications/App_Home_Screen.dart';
-import 'package:pureit/Slider_screen/Slider_Home_screen.dart';
+import 'package:pureit/view/screens/App_Home_Screen.dart';
+import 'package:pureit/view/screens/Slider_screen/Slider_Home_screen.dart';
 // ignore: depend_on_referenced_packages
 import 'package:firebase_core/firebase_core.dart';
 import 'package:pureit/Auth/Login_Screen.dart';
