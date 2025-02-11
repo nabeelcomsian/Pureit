@@ -1,15 +1,23 @@
 import 'package:flutter/material.dart';
+import 'package:pureit/utils/Stripe_Const.dart';
 import 'package:pureit/view/screens/App_Home_Screen.dart';
 import 'package:pureit/view/screens/Slider_screen/Slider_Home_screen.dart';
 // ignore: depend_on_referenced_packages
 import 'package:firebase_core/firebase_core.dart';
 import 'package:pureit/Auth/Login_Screen.dart';
 import 'package:pureit/testing.dart';
+import 'package:flutter_stripe/flutter_stripe.dart';
 
 void main() async {
-  WidgetsFlutterBinding.ensureInitialized();
+  await _setup();
   await Firebase.initializeApp();
+
   runApp(const MyApp());
+}
+
+Future<void> _setup() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  Stripe.publishableKey = stripePublishableKey;
 }
 
 class MyApp extends StatelessWidget {

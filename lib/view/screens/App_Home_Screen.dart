@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pureit/Notifications/notification_services.dart';
+import 'package:pureit/Services/Stripe_Services.dart';
 
 class AppHomeScreen extends StatefulWidget {
   const AppHomeScreen({super.key});
@@ -27,9 +28,22 @@ class _AppHomeScreenState extends State<AppHomeScreen> {
       appBar: AppBar(
         title: const Text("HOME SCREEN"),
       ),
-      body: SizedBox(
+      body: Container(
         width: MediaQuery.sizeOf(context).width,
         height: MediaQuery.sizeOf(context).height,
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          //mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            MaterialButton(
+              color: Colors.green,
+              onPressed: () {
+                StripeServices.instance.makePayment(20, 'USD');
+              },
+              child: Text('purchase'),
+            )
+          ],
+        ),
       ),
     );
   }
