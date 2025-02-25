@@ -1,13 +1,12 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:pureit/view/screens/App_Home_Screen.dart';
+import 'package:pureit/view/screens/Main_Screen.dart';
 import 'package:pureit/utils/utils.dart';
 import 'package:pureit/view/Component/Bottom_Wave.dart';
 import 'package:pureit/view/Component/CustomTextField.dart';
 import 'package:pureit/view/Component/Top_Container.dart';
 
-import 'package:pureit/RealTime_DataBase/PostScreen.dart';
 import 'package:pureit/Auth/Signup_Screen.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -40,7 +39,7 @@ class _LoginScreenState extends State<LoginScreen> {
         WidgetsBinding.instance.addPostFrameCallback((_) {
           Navigator.push(
             context,
-            MaterialPageRoute(builder: (context) => const AppHomeScreen()),
+            MaterialPageRoute(builder: (context) => const MainScreen()),
           );
         });
       }
@@ -60,14 +59,16 @@ class _LoginScreenState extends State<LoginScreen> {
     // Check if the user is already logged in
     if (_auth.currentUser != null) {
       // If the user is already logged in, navigate to the Postscreen
-      WidgetsBinding.instance.addPostFrameCallback((_) {
-        if (mounted) {
-          Navigator.pushReplacement(
-            context,
-            MaterialPageRoute(builder: (context) => const AppHomeScreen()),
-          );
-        }
-      });
+      WidgetsBinding.instance.addPostFrameCallback(
+        (_) {
+          if (mounted) {
+            Navigator.pushReplacement(
+              context,
+              MaterialPageRoute(builder: (context) => const MainScreen()),
+            );
+          }
+        },
+      );
     }
     return Scaffold(
       resizeToAvoidBottomInset: false,

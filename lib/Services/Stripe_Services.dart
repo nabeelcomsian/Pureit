@@ -53,6 +53,7 @@ class StripeServices {
   Future<void> _processPyament() async {
     try {
       await Stripe.instance.presentPaymentSheet();
+      await Stripe.instance.confirmPaymentSheetPayment();
     } catch (e) {
       print(e);
     }

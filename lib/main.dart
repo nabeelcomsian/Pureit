@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:pureit/CustomFliterIndicator.dart';
 import 'package:pureit/utils/Stripe_Const.dart';
-import 'package:pureit/view/screens/App_Home_Screen.dart';
+import 'package:pureit/view/screens/HomeScreen.dart';
+import 'package:pureit/view/screens/Main_Screen.dart';
 import 'package:pureit/view/screens/Slider_screen/Slider_Home_screen.dart';
 // ignore: depend_on_referenced_packages
 import 'package:firebase_core/firebase_core.dart';
@@ -28,7 +30,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: LoginScreen(),
+      home: MainScreen(),
     );
   }
 }
