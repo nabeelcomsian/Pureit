@@ -209,6 +209,193 @@ class Homescreen extends StatelessWidget {
                   )
                 ],
               ),
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            Container(
+              width: 350,
+              height: 220,
+              decoration: BoxDecoration(
+                color: Color(0XFFE7E7E7),
+                borderRadius: BorderRadius.circular(25),
+              ),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  Container(
+                    width: 50,
+                    height: 50,
+                    decoration: BoxDecoration(
+                        // shape: BoxShape.circle, color: Color(0XFF96C531),
+                        ),
+                    child: Image.asset('assets/whatappLogo.png'),
+                  ),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Text(
+                    'Whatsapp support available Monday to\n Friday via messaging',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                        color: Color(0XFF1E1E1E),
+                        fontFamily: 'Montserrat',
+                        fontSize: 14,
+                        fontWeight: FontWeight.w500,
+                        height: 25 / 14),
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Container(
+                    width: 230,
+                    height: 50,
+                    decoration: BoxDecoration(
+                        border: Border.all(color: Color(0XFF96C531), width: 1),
+                        borderRadius: BorderRadius.circular(54)),
+                    child: Center(
+                      child: Text(
+                        'Contact',
+                        style: TextStyle(
+                            color: Color(0XFF8FC123),
+                            fontFamily: 'Montserrat',
+                            fontSize: 14,
+                            fontWeight: FontWeight.w600,
+                            height: 18 / 14),
+                      ),
+                    ),
+                  )
+                ],
+              ),
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            Container(
+              width: 350,
+              height: 165,
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(25),
+                border: Border.all(color: Color(0XFFE7E7E7), width: 1),
+              ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  Image.asset('assets/shower.png'),
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        'Try the new shower filter!',
+                        textAlign: TextAlign.left,
+                        style: TextStyle(
+                            color: Color(0XFF1E1E1E),
+                            fontFamily: 'Montserrat',
+                            fontSize: 14,
+                            fontWeight: FontWeight.bold,
+                            height: 18 / 14),
+                      ),
+                      SizedBox(
+                        height: 10,
+                      ),
+                      Text(
+                        'Enjoy all the benefits of pure water\n even in the shower, for the well\n-being of your skin and hair',
+                        textAlign: TextAlign.left,
+                        style: TextStyle(
+                            color: Color(0XFF1E1E1E),
+                            fontFamily: 'Montserrat',
+                            fontSize: 12,
+                            fontWeight: FontWeight.bold,
+                            height: 18 / 14),
+                      ),
+                      SizedBox(
+                        height: 20,
+                      ),
+                      Container(
+                        width: 130,
+                        height: 26,
+                        decoration: BoxDecoration(
+                            color: Color(0XFF8FC123),
+                            borderRadius: BorderRadius.circular(54)),
+                        child: Center(
+                          child: Text(
+                            'DISCOVER MORE',
+                            style: TextStyle(
+                                color: Colors.white,
+                                fontFamily: 'Montserrat',
+                                fontSize: 10,
+                                fontWeight: FontWeight.w600,
+                                height: 10 / 14),
+                          ),
+                        ),
+                      )
+                    ],
+                  )
+                ],
+              ),
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            Container(
+              width: 350,
+              height: 165,
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(25),
+                border: Border.all(color: Color(0XFFE7E7E7), width: 1),
+              ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  Image.asset('assets/bottle.png'),
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        'Plastic bottles avoided',
+                        textAlign: TextAlign.left,
+                        style: TextStyle(
+                            color: Color(0XFF1E1E1E),
+                            fontFamily: 'Montserrat',
+                            fontSize: 14,
+                            fontWeight: FontWeight.bold,
+                            height: 18 / 14),
+                      ),
+                      SizedBox(
+                        height: 20,
+                      ),
+                      Text(
+                        '1700',
+                        textAlign: TextAlign.left,
+                        style: TextStyle(
+                            color: Color(0XFF8FC123),
+                            fontFamily: 'Montserrat',
+                            fontSize: 36,
+                            fontWeight: FontWeight.bold,
+                            height: 25 / 36),
+                      ),
+                      SizedBox(
+                        height: 15,
+                      ),
+                      Text(
+                        'Thank you, Your contribution is\n important for the environment',
+                        textAlign: TextAlign.left,
+                        style: TextStyle(
+                            color: Color(0XFF1E1E1E),
+                            fontFamily: 'Montserrat',
+                            fontSize: 12,
+                            fontWeight: FontWeight.bold,
+                            height: 18 / 14),
+                      ),
+                    ],
+                  )
+                ],
+              ),
             )
           ],
         ),

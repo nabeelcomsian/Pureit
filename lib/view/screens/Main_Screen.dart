@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:pureit/Notifications/notification_services.dart';
 import 'package:pureit/view/Component/Custom_Appbar.dart';
 import 'package:pureit/view/screens/HomeScreen.dart';
+import 'package:pureit/view/screens/Quiz_Screen.dart';
+import 'package:pureit/view/screens/Score_Screen.dart';
 import 'package:pureit/view/screens/Stripe_Screen.dart';
 
 class MainScreen extends StatefulWidget {
@@ -25,7 +27,7 @@ class _MainScreenState extends State<MainScreen> {
   }
 
   List<Widget> ScreenList = [
-    Homescreen(),
+    ScoreScreen(),
     StripeScreen(),
     Homescreen(),
   ];
