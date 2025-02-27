@@ -4,12 +4,14 @@ import 'package:pureit/utils/Stripe_Const.dart';
 import 'package:pureit/view/screens/HomeScreen.dart';
 import 'package:pureit/view/screens/Main_Screen.dart';
 import 'package:pureit/view/screens/Score_Screen.dart';
+import 'package:pureit/view/screens/Slider_screen/Slider_1.dart';
 import 'package:pureit/view/screens/Slider_screen/Slider_Home_screen.dart';
 // ignore: depend_on_referenced_packages
 import 'package:firebase_core/firebase_core.dart';
 import 'package:pureit/Auth/Login_Screen.dart';
 import 'package:pureit/testing.dart';
 import 'package:flutter_stripe/flutter_stripe.dart';
+import 'package:pureit/view/screens/Slider_screen/slider0.dart';
 
 void main() async {
   await _setup();
@@ -31,7 +33,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: MainScreen(),
+      home: LoginScreen(),
     );
   }
 }

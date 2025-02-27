@@ -27,6 +27,7 @@ class _MainScreenState extends State<MainScreen> {
   }
 
   List<Widget> ScreenList = [
+    Homescreen(),
     ScoreScreen(),
     StripeScreen(),
     Homescreen(),
